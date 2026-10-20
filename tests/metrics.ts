@@ -11,7 +11,7 @@ await mkdir(out, { recursive: true });
 const baselineTree = JSON.parse(await readFile(config.input, 'utf8'));
 const baseline = sample(buildTree(baselineTree), -1);
 
-const corpus = await readCorpus(new URL('../output/side-search/before.json', import.meta.url));
+const corpus = await readCorpus(new URL('../data/corpus.json', import.meta.url));
 const { samples, summary } = collect(replayRoots(corpus));
 await writeFile(new URL('metrics.json', out), JSON.stringify({ thresholds: THRESHOLDS, baseline, summary, samples }, null, 2) + '\n');
 

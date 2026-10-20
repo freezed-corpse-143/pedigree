@@ -16,7 +16,7 @@ type Corpus = { seed: number, cases: ({ index: number, root: unknown } & ({ stat
 
 const out = new URL('../output/side-search/', import.meta.url);
 await mkdir(out, { recursive: true });
-const before = await readCorpus(new URL('before.json', out));
+const before = await readCorpus(new URL('../data/corpus.json', import.meta.url));
 const blocked: { root: unknown } = JSON.parse(await readFile(new URL('counterexample.json', out), 'utf8'));
 const rescued: { root: unknown } = JSON.parse(await readFile(new URL('rescued-input.json', out), 'utf8'));
 const hash = (svg: string) => new Bun.CryptoHasher('sha256').update(svg).digest('hex');

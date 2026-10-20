@@ -10,7 +10,7 @@ import { NoPlacementError } from '../src/layout/index.ts';
 const out = new URL('../output/metrics/', import.meta.url);
 await mkdir(out, { recursive: true });
 const frozen = JSON.parse(await readFile(new URL('metrics.json', out), 'utf8'));
-const corpus = await readCorpus(new URL('../output/side-search/before.json', import.meta.url));
+const corpus = await readCorpus(new URL('../data/corpus.json', import.meta.url));
 const roots = replayRoots(corpus);
 
 // Three rows: the archived contract, the corridor alone (both newer freedoms off/on), and today.
