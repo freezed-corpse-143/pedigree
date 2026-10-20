@@ -1,0 +1,14 @@
+{
+  "id": "n0",
+  "children": [
+    {
+      "id": "n1",
+      "children": [
+        { "id": "n2", "children": [] },
+        { "id": "n3", "children": [] }
+      ]
+    },
+    { "id": "n4", "children": [] },
+    { "id": "n5", "children": [] }
+  ]
+}

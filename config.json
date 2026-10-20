@@ -1,0 +1,49 @@
+{
+  "input": "data/one-subtree.json",
+  "output": "output/one-subtree-D.svg",
+  "title": "one-subtree / D · 独占枝轴",
+  "frame": {
+    "width": 48,
+    "above": 21,
+    "below": 21,
+    "gap": 12
+  },
+  "layout": {
+    "tiltDegrees": 32,
+    "maxAngleDegrees": 70,
+    "connect": 80,
+    "tip": 44,
+    "step": 6,
+    "maxConnect": 1616,
+    "connectionIncrement": 24,
+    "maxHeightSteps": 20000,
+    "maxSideTrials": 32,
+    "minForkGap": 0,
+    "reserveAncestorCorridor": true,
+    "continueSoleChild": true,
+    "trunkShare": 0.4
+  },
+  "render": {
+    "samples": 32,
+    "decimals": 2,
+    "padding": 24,
+    "bottomPadding": 100,
+    "fontSize": 14,
+    "textOffset": 5,
+    "frameStroke": 1,
+    "collisionMargin": 0.02,
+    "width": {
+      "min": 1.7,
+      "max": 11,
+      "scale": 2,
+      "parentRatio": 0.55,
+      "tipMin": 1.3,
+      "tipRatio": 0.28
+    },
+    "stem": {
+      "thickness": 6.7,
+      "fill": "#666964",
+      "texture": null
+    }
+  }
+}

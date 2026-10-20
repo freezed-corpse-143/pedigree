@@ -1,0 +1,19 @@
+{
+  "name": "pedigree-tree-layout",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "bun src/generate-one-subtree.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun tests/input.test.ts && bun tests/config.test.ts && bun tests/pipeline.test.ts && bun tests/layout-stages.test.ts && bun tests/stem.test.ts && bun tests/clearance.test.ts && bun tests/side-search.test.ts && bun tests/render-scene.test.ts && bun tests/mount.test.ts && bun tests/stem-style.test.ts",
+    "experiments": "bun tests/clearance-experiment.ts && bun tests/side-search-experiment.ts && bun tests/metrics.ts && bun tests/fork-gap-experiment.ts && bun tests/corridor-experiment.ts",
+    "metrics": "bun tests/metrics.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "typescript": "^7.0.2"
+  }
+}
